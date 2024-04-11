@@ -19,11 +19,14 @@ bot.command("help", async (ctx) => {
   ctx.telegram.sendMessage(
     ctx.message.chat.id,
     `Puedes usar los comandos:
-  /start
-  /donald
-  /help
-  
-  Github: https://github.com/The-Anti-Procrastination-Society/quotes-telegram-bot`
+/start
+/donald
+/help
+
+The Anti Procrastination Society
+Deja de procrastinar!!!
+Puedes colaborar en este u otros de nuestros proyectos
+Github: https://github.com/The-Anti-Procrastination-Society/quotes-telegram-bot`
   );
 });
 
