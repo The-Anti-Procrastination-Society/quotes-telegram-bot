@@ -1,5 +1,7 @@
 # Super Quotes bot
 
+El objetivo es crear un bot con frases de mucha gente
+
 ```
 npm i
 npm run start
