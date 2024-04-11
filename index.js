@@ -15,6 +15,18 @@ bot.command("donald", async (ctx) => {
   ctx.telegram.sendMessage(ctx.message.chat.id, randomDonaldQuote());
 });
 
+bot.command("help", async (ctx) => {
+  ctx.telegram.sendMessage(
+    ctx.message.chat.id,
+    `Puedes usar los comandos:
+  /start
+  /donald
+  /help
+  
+  Github: https://github.com/The-Anti-Procrastination-Society/quotes-telegram-bot`
+  );
+});
+
 bot.launch();
 process.once("SIGINT", () => bot.stop("SIGINT"));
 process.once("SIGTERM", () => bot.stop("SIGTERM"));
